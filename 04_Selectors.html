@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <style>
+        * {
+            background-color: gray;
+            color: seashell;
+        }
+
+        /* div h1#tag{
+    background-color: red;
+} */
+        h1 {
+            background-color: red;
+        }
+   h1,p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+    </style>
+</head>
+
+<body>
+    <h1>Selector</h1>
+    <ol>
+        <li>:Simple Selector</li>
+        <li>:Combinator Selector</li>
+        <li>:Pseudo class Selector</li>
+    </ol>
+
+    <h1>Simple Selector</h1>
+    <ol>
+        <li>Universal Selecto(*)</li>
+        <li>Tag Selector(by tag name)</li>
+        <li>Group(,)</li>
+        <li>Id(#)</li>
+        <li>Class(.)</li>
+    </ol>
+    <div>
+        <h1>Universal Selector</h1>
+        <p>how to use UNIVERSAL - SELECTOR</p>
+        <p id="answer">
+        <ul>
+            <li>Its select doc</li>
+            <li>Defult by (*)</li>
+        </ul>
+        </p>
+        <h1 id="tag">Tag- Selector</h1>
+        <p>It is represent tag name</p>
+        <h1 id="group">Group Selector</h1>
+        <p class="def">Group selector seperator by (,)</p>
+    </div>
+</body>
+
+</html>

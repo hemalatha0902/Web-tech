@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid -layout</title>
+    <style>
+       .box1,.box2,.box3,.box4,.box5{
+        border: 1px solid black ;
+       }
+        #frame{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1em;
+    grid-template-rows: repeat(3,1fr);
+        }
+    .box1 #doll { 
+width:50px;
+height: 50px;
+border-radius: 50px;
+}
+.box1{
+    background-color: violet;
+    grid-column: 1;
+}
+.box2{
+    background-color: gray;
+    grid-column: 2;
+}
+.box3{
+    background-color: aliceblue;
+    grid-column: 3;
+    grid-row: 1/30;
+}
+.box4{
+     
+    background-color: gray;
+    grid-column: 4;
+    grid-row: 1/7;
+}
+.box5{
+    background-color: gray;
+    grid-column: 5;
+    grid-row: 1/7;
+}
+    </style>
+</head>
+<body>
+    <div id="frame">
+        <div class="box1">
+            <img src="https://wallpaperaccess.com/full/1873584.jpg" alt="loading" id="doll">
+            <span>Cool Girl</span>
+            <p>A collection of the top 47 Cool Girl Cartoon wallpapers and backgrounds available for download for free. We hope you enjoy our growing collection of HD images to use as a background or home screen for your smartphone or computer. Please contact us if you want to publish a Cool Girl Cartoon wallpaper on our site.
+
+            </p>
+
+        </div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+    </div>
+</body>
+</html>
